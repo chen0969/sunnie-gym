@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="w-100">
+        <h1 class="text-center w-100">
+            Online Training Sheet
+        </h1>
+    </header>
+    <main class="w-100">
+        <div>
+            <img class="w-100" src="media/parts.jpg" alt="part pic">
+        </div>
+        <!-- section -->
+        <div class="container">
+            <h2 class="row">Upper Body</h2>
+            <!-- parts -->
+            <div class="row">
+                <div class="col align-self-center">
+                    <div class="form-check" onclick="trapTimer()">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Traps
+                        </label>
+                    </div>
+                </div>
+                <div class="col align-self-start">
+                    <div>Count <span id="trap">5:00</span> minutes.</div>
+                </div>
+            </div>
+            <hr>
+            <!-- parts -->
+            <div class="row">
+                <div class="col align-self-center">
+                    <div class="form-check" onclick="shoulderTimer()">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Shoulders
+                        </label>
+                    </div>
+                </div>
+                <div class="col align-self-start">
+                    <div>Count <span id="shoulder">15:00</span> minutes.</div>
+                </div>
+            </div>
+            <hr>
+            <!-- parts -->
+            <div class="row">
+                <div class="col align-self-center">
+                    <div class="form-check" onclick="chestTimer()">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Chest
+                        </label>
+                    </div>
+                </div>
+                <div class="col align-self-start">
+                    <div>Count <span id="chest">15:00</span> minutes.</div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- section -->
+        <div class="container">
+            <h2 class="row">Middle Body</h2>
+            <!-- parts -->
+            <div class="row">
+                <div class="col align-self-center">
+                    <div class="form-check" onclick="absTimer()">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Abs
+                        </label>
+                    </div>
+                </div>
+                <div class="col align-self-start">
+                    <div>Count <span id="abs">5:00</span> minutes.</div>
+                </div>
+            </div>
+            <hr>
+            <!-- parts -->
+            <div class="row">
+                <div class="col align-self-center">
+                    <div class="form-check" onclick="mBackTimer()">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Middle Back
+                        </label>
+                    </div>
+                </div>
+                <div class="col align-self-start">
+                    <div>Count <span id="mBack">5:00</span> minutes.</div>
+                </div>
+            </div>
+            <hr>
+            <!-- parts -->
+            <div class="row">
+                <div class="col align-self-center">
+                    <div class="form-check" onclick="lBackTimer()">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Lower Back
+                        </label>
+                    </div>
+                </div>
+                <div class="col align-self-start">
+                    <div>Count <span id="lBack">5:00</span> minutes.</div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- section -->
+        <div class="container">
+            <h2 class="row">Lower Body</h2>
+            <!-- parts -->
+            <div class="row">
+                <div class="col align-self-center">
+                    <div class="form-check" onclick="legTimer()">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Legs
+                        </label>
+                    </div>
+                </div>
+                <div class="col align-self-start">
+                    <div>Count <span id="leg">10:00</span> minutes.</div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </main>
+    <footer class="w-100">
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+<script src="js/timer.js"></script>
+
+</html>
